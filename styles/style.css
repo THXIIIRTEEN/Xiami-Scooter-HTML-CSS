@@ -1,0 +1,950 @@
+body {
+    font-family: 'Gilroy';
+    background-image: url(../img/background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -1%;
+    z-index: 1000;
+    position: relative;
+}
+
+header svg {
+    fill: #F1F1F1;
+}
+
+#burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    font-size: 20px;
+    display: none;
+    width: 45px;
+    height: 45px;
+    padding: 0px;
+    color: #151515;
+    box-sizing: initial;
+}
+
+#burger a {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #151515;
+}
+
+#white-phone {
+    display: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+h1 {
+    color: #F1F1F1;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    width: 90%;
+    margin: 2% 0%;
+    z-index: 2;
+}
+
+h2 {
+    color: #FF4C0D;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    width: 40%;
+    margin: 2% 0%;
+    z-index: 20;
+}
+
+h3 {
+    color: #F1F1F1;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 110%; 
+    margin: 0%;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: -0.14px;
+    margin: 0%;
+}
+
+.orange {
+    color: #FF4C0D;
+}
+
+.white {
+    color: #F1F1F1;
+}
+
+.white-button {
+    background-color: #F1F1F1;
+    color: #151515;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    position: relative;
+}
+
+.first-frame {
+    width: 100%;
+    padding: 0% 10%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 8%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    padding: 0% 8%;
+    box-sizing: border-box;
+    z-index: 1001;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.00) 95%);
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 80%;
+}
+
+.navigation a {
+    margin: 0% 2%;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.large-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin: 4% 0%;
+}
+
+.double-button {
+    width: 250px;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0%;
+}
+
+.double-button .white-button {
+    width: 50%;
+}
+
+.transparent-button {
+    color: #F1F1F1;
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.bike {
+    width: 1100px;
+    position: absolute;
+    z-index: 1;
+    right: 0px; top: 0%;
+    display: flex;
+    margin: 0%;
+}
+
+.bike_shadow {
+    width: 1100px;
+    position: absolute;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    right: 0px; top: 0%;
+    display: flex;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.advantages {
+    margin-top: 15%;
+    color: #8F7A75;
+}
+
+.advantages h3 {
+    width: 70%;
+}
+
+.adv-groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adv-desc {
+    width: 33.333333%;
+}
+
+.adv-desc h4 {
+    border-bottom: solid;
+    padding: 3% 0%;
+}
+
+.adv-desc p {
+    width: 90%;
+}
+
+.advantages img {
+    margin-top: 2%;
+}
+
+.large-image {
+    width: 800px;
+}
+
+.small-image {
+    width: 360px;
+    height: 300px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second-frame {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 10%;
+    margin-top: 8%;
+    background: url(../img/happypeople.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 50;
+}
+
+.second-frame h3 {
+    width: 40%;
+    margin: 8% 0% 2% 0%;
+}
+
+.second-frame p {
+    width: 25%;
+    margin: 2% 0%;
+}
+
+.third-frame {
+    padding: 0% 10%;
+    margin-top: 8%;
+}
+
+.third-frame .orange {
+    width: 70%;
+}
+
+.design-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+
+.design-image {
+    width: 560px;
+    height: 550px;
+    background: url(../img/motobike.png);
+    background-size: contain;
+    border-radius: 15px;
+    padding: 3% 6%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+#second {
+    background: url(../img/helm.png);
+    background-size: contain;
+}
+
+.third-frame .adv-desc {
+    width: 25%;
+    margin: 2% 0%;
+}
+
+.third-frame .advantages {
+    margin-top: 8%;
+}
+
+.mobile-app {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    padding: 6% 0%;
+}
+
+.mobile-app img {
+    width: 700px;
+    position: absolute;
+    right: 0px;
+    margin-top: -20%;
+    z-index: 2;
+}
+
+.mobile-app .text {
+    align-self: center;
+    width: 70%;
+}
+
+.mobile-app .text h3 {
+    margin: 3% 0%;
+}
+
+#lights {
+    z-index: 3;
+}
+
+#lights2 {
+    z-index: 1;
+}
+
+.mobile-app .text p {
+    width: 40%;
+    margin: 3% 0%;
+}
+
+.mobile-app button {
+    width: 160px;
+    height: 40px;
+    padding: 0.6% 0.2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 7px;
+    margin: 0% 1%;
+    cursor: pointer;
+}
+
+.mobile-app button svg {
+    margin: 4%;
+    height: 100%;
+}
+
+.mobile-app .text button p {
+    width: 90%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.mobile-app .text span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#fourth-frame {
+    background: url(../img/aboutbrand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.fivth-frame {
+    width: 100%;
+    padding: 0% 10%;
+    box-sizing: border-box;
+    padding-top: 8%;
+}
+
+.review-block {
+    background-color: #151515;
+    padding: 0% 4%;
+    width: 460px;
+    height: 300px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-block h4 {
+    margin: 0% 0% 2% 0%;
+}
+
+.review-blocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+
+.review-block p {
+    width: 375px;
+}
+
+.fivth-frame .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: right;
+}
+
+.arrows button {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 2%;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#orange_bg {
+    background-color: #FF4C0D;
+}
+
+#white_bg {
+    background-color: #F1F1F1;
+}
+
+#underline::after {
+    content: ' ';
+    background-color: #FF4C0D;
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin-top: 4%;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 8%;
+}
+
+.questions-left {
+    width: 50%;
+}
+
+.questions-left h3 {
+    margin-bottom: 6%;
+}
+
+.questions-left p {
+    width: 70%;
+    margin: 2% 0%;
+}
+
+.questions-left button {
+    margin-top: 8%;
+}
+
+.questions-right {
+    width: 50%;
+    color: #F1F1F1;
+}
+
+.questions-right h4 {
+    margin: 0%;
+    margin-bottom: 2%;
+}
+
+.questions-right p {
+    margin: 2% 0%;
+}
+
+.scooter-pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 4% 6%;
+    background: url(../img/scooter_pro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+    border-radius: 15px;
+}
+
+.scooter-pro #orange_bg {
+    color: white;
+    margin-top: 25%;
+}
+
+.scooter-pro .double-button {
+    margin: 6% 0%;
+}
+
+.pro-right h4 {
+    margin: 0%;
+    margin-bottom: 10%;
+}
+
+.pro-right p {
+    margin: 4% 0%;
+}
+
+.pro-right {
+    color: #F1F1F1;
+    z-index: 1000;
+}
+
+.pro-left {
+    z-index: 1000;
+}
+
+.bike_full {
+    width: 880px;
+    position: absolute;
+    display: block;
+    right: 4%;
+    margin-top: -10%;
+}
+
+#bike {
+    z-index: 1;
+}
+
+#shadow {
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+footer {
+    color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4% 0%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.white-button:hover {
+    background-color: #FF4C0D;
+    color: #F1F1F1;
+}
+
+.double-button .white-button:hover {
+    background-color: #F1F1F1;
+    color: #151515;
+}
+
+#orange_bg:hover {
+    background-color: #F1F1F1;
+    color: #151515;
+}
+
+.arrows #white_bg svg{
+    fill: #151515;
+}
+
+.arrows #orange_bg svg{
+    fill: #F1F1F1;
+}
+
+.arrows #white_bg:hover {
+    background-color: #FF4C0D;
+}
+
+.arrows #white_bg:hover svg {
+    fill: #F1F1F1;
+}
+
+.arrows #orange_bg:hover {
+    background-color: #F1F1F1;
+}
+
+.arrows #orange_bg:hover svg {
+    fill: #151515;
+}
+
+:hover {
+    transition: 0.2s;
+}
+
+.adv-desc:hover {
+    color: #F1F1F1;
+    cursor: pointer;
+}
+
+.adv-desc:hover h4 {
+    color: #F1F1F1;
+    cursor: pointer;
+    border-bottom-color: #FF4C0D;
+    transition: 0.4s;
+}
+
+#hidden-image {
+    width: 0px;
+    height: 0px;
+}
+
+@media (max-width: 960px) and (min-width: 320px) {
+
+.images {
+    width: 0px;
+    height: 0px;
+}
+
+.pro-left h2 {
+    color: #FF4C0D;
+}
+
+.large-image {
+    width: 0px;
+    height: 0px;
+}
+
+.small-image {
+    width: 0px;
+    height: 0px;
+}
+
+#hidden-image {
+    width: 100%;
+    height: auto;
+}
+
+.adv-groups {
+    display: flex;
+    flex-direction: column;
+}
+
+.adv-desc {
+    width: 100%;
+    color: #F1F1F1;
+}
+
+.adv-desc h4 {
+    color: #FF4C0D;
+    border-bottom-color: #FF4C0D;
+}
+
+.advantages h3 {
+    width: 100%;
+    color: #F1F1F1;
+    font-size: 30px;
+}
+
+.third-frame .adv-desc {
+    width: 100%;
+    color: #F1F1F1;
+}
+
+.third-frame .design-desc h3 {
+    width: 100%;
+    color: #F1F1F1;
+    font-size: 30px;
+}
+
+#second-review {
+    display: none;
+}
+
+.mobile-app img {
+    width: 320px;
+}
+
+.mobile-app .text p {
+    width: 70%;
+}
+
+#fourth-frame p {
+    width: 60%;
+}
+
+.questions {
+    flex-direction: column;
+}
+
+.questions-left {
+    width: 90%;
+    margin-bottom: 8%;
+}
+
+.questions-right {
+    width: 100%;
+}
+
+.design-images {
+    justify-content: center;
+}
+
+#second {
+    margin-top: 8%;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 120%;
+    color: #FF4C0D;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 120%;
+    width: 60%;
+    color: #F1F1F1;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.large-sign {
+    margin-top: 18%;
+}
+
+.bike {
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+}
+
+.bike_shadow {
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+}    
+
+.pro-right {
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+    display: none;
+}
+
+.pro-right p {
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+}
+
+.pro-right h4 {
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+}
+
+.bike_full {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    right: 0px;
+}
+
+.navigation {
+    display: none;
+}
+
+#burger {
+    display: flex;
+}
+
+#none {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 8% 0%;
+}
+
+footer .footer-right {
+    text-align: center;
+}
+
+header svg {
+    fill: #FF4C0D;
+}
+
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .bike {
+        top: 0px;
+        width: 350px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .bike_shadow {
+        top: 0px;
+        width: 350px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .large-sign {
+        margin-top: 180%;
+    }
+
+    .white-button {
+        width: 100%;
+    }
+
+    .review-block {
+        width: 100%;
+    }
+
+    .review-block p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .bike_full {
+        width: 100%;
+        object-fit: contain;
+        align-self: center;
+        margin-top: 40%;
+    }
+
+    .pro-left #orange_bg {
+        margin-top: 120%;
+    }
+
+    .scooter-pro {
+        padding: 8%;
+    }
+
+    .second-frame h3 {
+        width: 100%;
+    }
+
+    .second-frame p {
+        width: 100%;
+    }
+
+    #fourth-frame {
+        margin-top: 0%;
+    }
+
+    #fourth-frame p {
+        width: 100%;
+    }
+
+    .mobile-app {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0%;
+    }
+
+    .mobile-app .text {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .mobile-app .text h3 {
+        width: 100%;
+    }
+
+    .mobile-app .text p {
+        width: 100%;
+    }
+
+    .mobile-app img {
+        display: none;
+    }
+
+    #white-phone {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-top: 20%;
+    }
+
+    .mobile-app .buttons button p {
+        font-size: 12px;
+    }
+
+    .design-images .design-image {
+        width: 300px;
+        height: 300px;
+    }
+} 
+
+body {
+    margin: 0% !important;
+}
